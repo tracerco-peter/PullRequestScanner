@@ -1,0 +1,14 @@
+{
+  "profiles": {
+    "TomLonghurst.PullRequestScanner.FunctionApp": {
+      "commandName": "Project",
+      "commandLineArgs": "--port 7158"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}",
+      "httpPort": 31587,
+      "useSSL": false
+    }
+  }
+}
