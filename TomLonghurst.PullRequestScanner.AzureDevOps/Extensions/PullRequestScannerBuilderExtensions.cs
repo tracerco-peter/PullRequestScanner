@@ -31,9 +31,15 @@ public static class PullRequestScannerBuilderExtensions
         pullRequestScannerBuilder.Services
             .AddHttpClient<AzureDevOpsHttpClient>((provider, client) =>
             {
+                client.DefaultRequestHeaders.Accept.Add(
+                    new MediaTypeWithQualityHeaderValue("application/json"));
+
                 var azureDevOpsOptions = provider.GetRequiredService<AzureDevOpsOptions>();
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Basic",
-                    Convert.ToBase64String(Encoding.ASCII.GetBytes(azureDevOpsOptions.PersonalAccessToken)));
+                    Convert.ToBase64String(
+                        Encoding.ASCII.GetBytes(
+                            $":{azureDevOpsOptions.PersonalAccessToken}")));
+
                 client.BaseAddress =
                     new Uri(
                         $"https://dev.azure.com/{azureDevOpsOptions.OrganizationSlug}/{azureDevOpsOptions.ProjectSlug}/_apis/git/");
