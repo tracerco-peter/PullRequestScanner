@@ -1,14 +1,19 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomLonghurst.PullRequestScanner", "TomLonghurst.PullRequestScanner\TomLonghurst.PullRequestScanner.csproj", "{3DB24D0C-E3D9-4955-8DA6-DFDEEB4D5539}"
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33110.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomLonghurst.PullRequestScanner", "TomLonghurst.PullRequestScanner\TomLonghurst.PullRequestScanner.csproj", "{3DB24D0C-E3D9-4955-8DA6-DFDEEB4D5539}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomLonghurst.PullRequestScanner.AzureDevOps", "TomLonghurst.PullRequestScanner.AzureDevOps\TomLonghurst.PullRequestScanner.AzureDevOps.csproj", "{7CF342C7-91B7-438C-B3DE-7EF6AE1353CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomLonghurst.PullRequestScanner.AzureDevOps", "TomLonghurst.PullRequestScanner.AzureDevOps\TomLonghurst.PullRequestScanner.AzureDevOps.csproj", "{7CF342C7-91B7-438C-B3DE-7EF6AE1353CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomLonghurst.PullRequestScanner.GitHub", "TomLonghurst.PullRequestScanner.GitHub\TomLonghurst.PullRequestScanner.GitHub.csproj", "{D2967AD5-F36A-4208-82D8-58454ED83D75}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomLonghurst.PullRequestScanner.GitHub", "TomLonghurst.PullRequestScanner.GitHub\TomLonghurst.PullRequestScanner.GitHub.csproj", "{D2967AD5-F36A-4208-82D8-58454ED83D75}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomLonghurst.PullRequestScanner.Plugins.MicrosoftTeams.WebHook", "TomLonghurst.PullRequestScanner.Plugins.MicrosoftTeams.WebHook\TomLonghurst.PullRequestScanner.Plugins.MicrosoftTeams.WebHook.csproj", "{6727C281-B5E9-443D-A739-8218046B3B15}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomLonghurst.PullRequestScanner.Plugins.MicrosoftTeams.WebHook", "TomLonghurst.PullRequestScanner.Plugins.MicrosoftTeams.WebHook\TomLonghurst.PullRequestScanner.Plugins.MicrosoftTeams.WebHook.csproj", "{6727C281-B5E9-443D-A739-8218046B3B15}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TomLonghurst.PullRequestScanner.Example", "TomLonghurst.PullRequestScanner.Example\TomLonghurst.PullRequestScanner.Example.csproj", "{9F8485B7-A53B-48BB-BC8A-1FE12D5CBB12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomLonghurst.PullRequestScanner.Example", "TomLonghurst.PullRequestScanner.Example\TomLonghurst.PullRequestScanner.Example.csproj", "{9F8485B7-A53B-48BB-BC8A-1FE12D5CBB12}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TomLonghurst.PullRequestScanner.AzureDevOpsV2", "TomLonghurst.PullRequestScanner.AzureDevOpsV2\TomLonghurst.PullRequestScanner.AzureDevOpsV2.csproj", "{7AF7F14A-4377-4AC1-96D1-8C5CB0F218F0}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +41,15 @@ Global
 		{9F8485B7-A53B-48BB-BC8A-1FE12D5CBB12}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9F8485B7-A53B-48BB-BC8A-1FE12D5CBB12}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9F8485B7-A53B-48BB-BC8A-1FE12D5CBB12}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7AF7F14A-4377-4AC1-96D1-8C5CB0F218F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7AF7F14A-4377-4AC1-96D1-8C5CB0F218F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7AF7F14A-4377-4AC1-96D1-8C5CB0F218F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7AF7F14A-4377-4AC1-96D1-8C5CB0F218F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {65DF431C-B7AD-4C10-9507-2CF40BE5926B}
 	EndGlobalSection
 EndGlobal
